@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.6s ease;
+}
+
+.box {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url(images/pexels-pixabay-459277.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.contain-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    margin: 1rem;
+    width: 80vw;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    /* background-color: pink; */
+    width: 100%;
+    height: 30vh;
+}
+
+.profile img {
+    height: 20vh;
+    border-radius: 60%;
+}
+
+.profile h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile P {
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile h3 img {
+    height: 2.5vh;
+}
+
+/* ----------- */
+.profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: grey; */
+    width: 100%;
+    height: 30vh;
+}
+
+.profile-link button {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0px none;
+}
+
+.profile-link button:hover {
+    width: 55%;
+    background-color: antiquewhite;
+}
+
+.profile-link button a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-color: orange; */
+    width: 100%;
+}
+
+/* -------- */
+footer span {
+    font-weight: bold;
+    padding-left: 0.4rem;
+    color: orangered;
+
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 425px) {
+    .profile-link button {
+        width: 80%;
+    
+    }
+    .profile-link button:hover {
+        width: 81%;
+        background-color: antiquewhite;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contact-box {
+        width: 100%;
+        
+    }
+    .profile-link button {
+        width: 100%;
+        
+    }
+    .profile P {
+        font-size: 0.8rem;
+    }
+    footer{
+        font-size: 0.5rem;
+    }
+}
